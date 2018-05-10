@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+@import 'reset';
+
+body {
+	background-color: #2980b9;
+	font-family: 'Lato', sans-serif;
+}
+
+html {
+	font-size: 10px;
+}
+
+h2 {
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 700;
+	color: #ecf0f1;
+	margin-bottom: 2rem;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.Carousel {
+	width: 80rem;
+	height: 60rem;
+	border: 2px solid #ecf0f1;
+	overflow: hidden;
+	position: relative;
+
+	li {
+		width: 80rem;
+		height: 60rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		float: left;
+		background-size: cover;
+		background-position: center;	
+	}
+
+	.caption {
+		text-align: center;
+
+		p {
+		font-size: 2.6rem;
+		line-height: 1.5;
+		padding: 0 10rem 3rem;
+		font-weight: 300;
+		color: #fff;
+		}
+
+		button {
+			padding: 1.5rem 3rem;
+			font-size: 1.8rem;
+			background-color: #27ae60;
+			color: #fff;
+			font-weight: 400;
+			border: 1px solid #bdc3c7;
+			transition: all .4s;
+
+			&:hover {
+				background-color: #2ecc71;
+			}
+		}
+	}
+}
